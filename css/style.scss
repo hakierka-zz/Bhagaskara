@@ -270,7 +270,21 @@ header {
     color: white;
   }
 }
-.team2 {
+
+.team1 {
+  text-align: center;
+  img {
+    width: 20%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+  svg {
+    width: 6%;
+  }
+}
+
+
+.portfolio {
   background-color: $grayColor;
   width: 100%;
   background-size: 100% auto;

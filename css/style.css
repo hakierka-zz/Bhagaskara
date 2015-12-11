@@ -287,7 +287,19 @@ header .cls-4 {
   color: white;
 }
 
-.team2 {
+.team1 {
+  text-align: center;
+}
+.team1 img {
+  width: 20%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+.team1 svg {
+  width: 6%;
+}
+
+.portfolio {
   background-color: #ccd0d2;
   width: 100%;
   background-size: 100% auto;
