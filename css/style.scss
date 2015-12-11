@@ -1,0 +1,171 @@
+
+
+
+@import "reset";
+@import "variables";
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: lato, sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+  font-family: latoregular, sans-serif;
+  &:visited {
+    color: #000;
+  }
+  &:hover {
+    color: $purpleColor;
+  }
+
+
+}
+
+.cls-1, .cls-2, .cls-4 {
+  fill: $whiteColor;
+}
+.cls-1, .cls-2  {
+  stroke: $whiteColor;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 0.1;
+}
+.cls-1:hover,
+.cls-2:hover {
+  stroke: $purpleColor;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 1;
+  fill: $purpleColor;
+}
+
+
+.cls-1, .cls-2, .diamond {
+  fill-rule: evenodd;
+}
+.cls-3, .cls-4, .diamond {
+  font-size: 18px;
+}
+.cls-4 {
+  text-anchor: middle;
+  font-family: latoregular, sans-serif;
+}
+
+.header {
+  background-image: url("../images/Layer2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 56%;
+  height: 0;
+  width:100%;
+  border: 1px solid blue;
+
+
+}
+.centerElement {
+  max-width: 1170px;
+  margin: 0 auto;
+  width:85%;
+  border: 1px solid red;
+}
+.jumbotron{
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  h1 {
+
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+.jumbotronMenu {
+
+  border: 3px solid pink;
+  width: 100% ;
+
+}
+.list {
+
+  list-style-type: none;
+}
+
+
+
+.flexbox-container {
+  padding-top: 20px;
+  height: 400px;
+  width: 100% ;
+  border: 2px solid yellow;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  //justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  .flex-item {
+    //padding-bottom: 18%;
+    flex: 1 1 auto;
+    order: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:1px solid yellow;
+
+  }
+
+  .flex-item:nth-child(3),
+  .flex-item:nth-child(4) {
+    align-self: flex-start;
+  }
+  .flex-item:nth-child(4) {
+    align-self: flex-start;
+  }
+
+}
+
+.arrow {
+  text-align: center;
+}
+
+
+
+.menu {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-between;
+  li {
+    display: inline-block;
+    padding: 10px 10px 0 0;
+    &:first-child {
+      padding-left: 10px;
+    }
+  }
+
+}
+//.content {
+//  height: 1500px;
+//}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.about {
+  background: gray;
+  a {
+    color: #707070;
+  }
+}

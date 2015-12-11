@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: lato, sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+  font-family: latoregular, sans-serif;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: #9f449b;
+}
+
+.cls-1, .cls-2, .cls-4 {
+  fill: #fff;
+}
+
+.cls-1, .cls-2 {
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 0.1;
+}
+
+.cls-1:hover,
+.cls-2:hover {
+  stroke: #9f449b;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 1;
+  fill: #9f449b;
+}
+
+.cls-1, .cls-2, .diamond {
+  fill-rule: evenodd;
+}
+
+.cls-3, .cls-4, .diamond {
+  font-size: 18px;
+}
+
+.cls-4 {
+  text-anchor: middle;
+  font-family: latoregular, sans-serif;
+}
+
+.header {
+  background-image: url("../images/Layer2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 56%;
+  height: 0;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+.centerElement {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 85%;
+  border: 1px solid red;
+}
+
+.jumbotron {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.jumbotron h1 {
+  color: white;
+}
+.jumbotron p {
+  color: white;
+}
+
+.jumbotronMenu {
+  border: 3px solid pink;
+  width: 100%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.flexbox-container {
+  padding-top: 20px;
+  height: 400px;
+  width: 100%;
+  border: 2px solid yellow;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+.flexbox-container .flex-item {
+  flex: 1 1 auto;
+  order: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid yellow;
+}
+.flexbox-container .flex-item:nth-child(3),
+.flexbox-container .flex-item:nth-child(4) {
+  align-self: flex-start;
+}
+.flexbox-container .flex-item:nth-child(4) {
+  align-self: flex-start;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.menu {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.menu li {
+  display: inline-block;
+  padding: 10px 10px 0 0;
+}
+.menu li:first-child {
+  padding-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.about {
+  background: gray;
+}
+.about a {
+  color: #707070;
+}
+
+/*# sourceMappingURL=style.css.map */
