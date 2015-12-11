@@ -202,11 +202,11 @@ header .cls-4 {
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-between;
-  height: 5%;
+  width: 100%;
+  background: #fff;
 }
 .menu li {
   display: inline-block;
-  padding: 10px 10px 0 0;
 }
 .menu li:first-child {
   padding-left: 10px;
@@ -216,33 +216,48 @@ header .cls-4 {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
-.about {
-  background: #ccd0d2;
-}
 .about .flexbox-about {
-  padding: 5%;
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
-  justify-content: center;
-}
-.about .flexbox-about h1 {
-  padding: 10% 0 10% 0;
+  justify-content: space-around;
+  background: #ccd0d2;
 }
 .about .flexbox-about .flex-about-item {
   text-align: center;
-  padding: 30px;
 }
-.about .flexbox-about .flex-about-item:first-child {
-  padding-left: 13%;
-}
-.about .flexbox-about .flex-about-item:last-child {
-  padding-right: 13%;
-}
-.about a {
+.about .flexbox-about a {
   color: #707070;
+}
+.about .aboutMore {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.about .aboutMore .aboutMore-item:first-child {
+  width: 50%;
+}
+.about .aboutMore:last-child {
+  align-self: flex-end;
+}
+
+.centerElementAbout {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 85%;
+  border: 1px solid red;
+}
+
+.centerElementMenu {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
