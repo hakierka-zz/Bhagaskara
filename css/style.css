@@ -220,12 +220,16 @@ header .cls-4 {
   background-color: #fff;
 }
 
+.aboutWhole {
+  background: #ccd0d2;
+  background-size: 100% auto;
+}
+
 .about .flexbox-about {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-around;
-  background: #ccd0d2;
 }
 .about .flexbox-about .flex-about-item {
   text-align: center;
@@ -238,12 +242,13 @@ header .cls-4 {
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-around;
+  align-items: flex-end;
 }
-.about .aboutMore .aboutMore-item:first-child {
-  width: 50%;
+.about .aboutMore img {
+  width: 40%;
 }
-.about .aboutMore:last-child {
-  align-self: flex-end;
+.about .aboutMore-item:last-child {
+  align-self: flex-start;
 }
 
 .centerElementAbout {
@@ -251,6 +256,7 @@ header .cls-4 {
   margin: 0 auto;
   width: 85%;
   border: 1px solid red;
+  background-color: #ccd0d2;
 }
 
 .centerElementMenu {
@@ -258,6 +264,16 @@ header .cls-4 {
   margin: 0 auto;
   width: 100%;
   border: 1px solid red;
+}
+
+.team {
+  background-image: url("../images/quoteBackground.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+  height: 0;
+  width: 100%;
+  border: 1px solid blue;
 }
 
 /*# sourceMappingURL=style.css.map */

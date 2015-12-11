@@ -200,6 +200,10 @@ header {
   width: 100% ;
   background-color: $whiteColor;
 }
+.aboutWhole {
+  background: #ccd0d2;
+  background-size: 100% auto;
+}
 
 .about {
   .flexbox-about {
@@ -211,34 +215,34 @@ header {
     }
     .flex-about-item {
       text-align: center;
-
   }
-  background: #ccd0d2;
   a {
     color: #707070;
   }
 }
+
 .aboutMore {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-around;
-
+  align-items: flex-end;
+  img {
+  width: 40%}
+  }
   .aboutMore-item {
-    &:first-child {
-      width: 50%;
-    }
-    }
-    &:last-child {
-      align-self: flex-end;
+    &:last-child{
+    align-self: flex-start;
     }
   }
 }
+
   .centerElementAbout {
     max-width: 1170px;
     margin: 0 auto;
     width:85%;
     border: 1px solid red;
+    background-color: #ccd0d2;
   }
   .centerElementMenu {
     max-width: 1170px;
@@ -246,3 +250,13 @@ header {
     width:100%;
     border: 1px solid red;
   }
+
+.team {
+  background-image: url("../images/quoteBackground.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+  height: 0;
+  width:100%;
+  border: 1px solid blue;
+}
