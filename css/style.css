@@ -143,10 +143,15 @@ header .cls-4 {
   background-position: center;
 }
 .jumbotron h1 {
+  padding-bottom: 2%;
   color: white;
 }
 .jumbotron p {
+  padding-bottom: 2%;
   color: white;
+}
+.jumbotron img {
+  padding: 5% 0 5% 0;
 }
 
 .jumbotronMenu {
@@ -160,7 +165,6 @@ header .cls-4 {
 
 .flexbox-container {
   padding-top: 20px;
-  height: 400px;
   width: 100%;
   border: 2px solid yellow;
   display: flex;
@@ -186,6 +190,10 @@ header .cls-4 {
 
 .arrow {
   text-align: center;
+  height: 100px;
+}
+.arrow svg {
+  width: 6%;
 }
 
 .menu {
@@ -194,6 +202,7 @@ header .cls-4 {
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-between;
+  height: 5%;
 }
 .menu li {
   display: inline-block;
@@ -210,15 +219,27 @@ header .cls-4 {
 }
 
 .about {
-  background: gray;
+  background: #ccd0d2;
 }
 .about .flexbox-about {
-  margin: 0;
-  padding: 0;
+  padding: 5%;
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: center;
+}
+.about .flexbox-about h1 {
+  padding: 10% 0 10% 0;
+}
+.about .flexbox-about .flex-about-item {
+  text-align: center;
+  padding: 30px;
+}
+.about .flexbox-about .flex-about-item:first-child {
+  padding-left: 13%;
+}
+.about .flexbox-about .flex-about-item:last-child {
+  padding-right: 13%;
 }
 .about a {
   color: #707070;

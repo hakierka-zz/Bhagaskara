@@ -106,11 +106,18 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   h1 {
+    padding-bottom: 2%;
+
+    color: white;
+
+  }
+  p {
+    padding-bottom: 2%;
 
     color: white;
   }
-  p {
-    color: white;
+  img {
+    padding: 5% 0 5% 0;
   }
 }
 .jumbotronMenu {
@@ -128,7 +135,7 @@ header {
 
 .flexbox-container {
   padding-top: 20px;
-  height: 400px;
+  //height: 400px;
   width: 100% ;
   border: 2px solid yellow;
   display: flex;
@@ -159,6 +166,10 @@ header {
 
 .arrow {
   text-align: center;
+  height: 100px;
+  svg {
+    width: 6%;
+  }
 }
 
 
@@ -169,6 +180,7 @@ header {
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-between;
+  height: 5%;
   li {
     display: inline-block;
     padding: 10px 10px 0 0;
@@ -189,14 +201,29 @@ header {
 
 .about {
   .flexbox-about {
-    margin: 0;
-    padding: 0;
+    //margin: 50px;
+    padding: 5%;
     display: flex;
     flex-wrap: nowrap;
     flex-flow: row;
     justify-content: center;
+    h1 {
+      padding: 10% 0 10% 0;
+    }
+    .flex-about-item {
+      text-align: center;
+      padding: 30px;
+      &:first-child {
+        padding-left: 13%;
+      }
+      &:last-child {
+        padding-right: 13%;
+      }
+
+
+    }
   }
-  background: gray;
+  background: #ccd0d2;
   a {
     color: #707070;
   }
