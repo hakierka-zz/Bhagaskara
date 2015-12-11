@@ -270,10 +270,21 @@ header .cls-4 {
   background-image: url("../images/quoteBackground.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-bottom: 20%;
+  background-position: center;
+  padding-bottom: 40%;
   height: 0;
   width: 100%;
   border: 1px solid blue;
+}
+
+.quote {
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+}
+.quote h1 {
+  padding-top: 5%;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
