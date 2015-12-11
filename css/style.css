@@ -287,4 +287,18 @@ header .cls-4 {
   color: white;
 }
 
+.team2 {
+  background-color: #ccd0d2;
+  width: 100%;
+  background-size: 100% auto;
+  padding-bottom: 30%;
+}
+
+.statistic {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=style.css.map */
