@@ -73,37 +73,51 @@ a:hover {
   color: #9f449b;
 }
 
-.cls-1, .cls-2, .cls-4 {
+header .cls-1, header .cls-2, header .cls-4 {
   fill: #fff;
 }
-
-.cls-1, .cls-2 {
+header .cls-1, header .cls-2 {
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 2px;
   fill-opacity: 0.1;
 }
-
-.cls-1:hover,
-.cls-2:hover {
+header .cls-1:hover,
+header .cls-2:hover {
   stroke: #9f449b;
   stroke-linejoin: round;
   stroke-width: 2px;
   fill-opacity: 1;
   fill: #9f449b;
 }
-
-.cls-1, .cls-2, .diamond {
+header .cls-1, header .cls-2, header .diamond {
   fill-rule: evenodd;
 }
-
-.cls-3, .cls-4, .diamond {
+header .cls-3, header .cls-4, header .diamond {
   font-size: 18px;
 }
-
-.cls-4 {
+header .cls-4 {
   text-anchor: middle;
   font-family: latoregular, sans-serif;
+}
+
+.about .cls-1, .about .cls-2 {
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 0.1;
+  fill-rule: evenodd;
+}
+.about .cls-1:hover,
+.about .cls-2:hover {
+  stroke: #9f449b;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill-opacity: 0.1;
+  fill: #9f449b;
+}
+.about .cls-1, .about .cls-2 {
+  fill: #fff;
 }
 
 .header {
@@ -197,6 +211,14 @@ a:hover {
 
 .about {
   background: gray;
+}
+.about .flexbox-about {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: center;
 }
 .about a {
   color: #707070;

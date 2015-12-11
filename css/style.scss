@@ -28,35 +28,59 @@ a {
 
 
 }
+header {
+  .cls-1, .cls-2, .cls-4 {
+    fill: $whiteColor;
+  }
+  .cls-1, .cls-2 {
+    stroke: $whiteColor;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-opacity: 0.1;
+  }
+  .cls-1:hover,
+  .cls-2:hover {
+    stroke: $purpleColor;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-opacity: 1;
+    fill: $purpleColor;
+  }
 
-.cls-1, .cls-2, .cls-4 {
-  fill: $whiteColor;
+  .cls-1, .cls-2, .diamond {
+    fill-rule: evenodd;
+  }
+  .cls-3, .cls-4, .diamond {
+    font-size: 18px;
+  }
+  .cls-4 {
+    text-anchor: middle;
+    font-family: latoregular, sans-serif;
+  }
 }
-.cls-1, .cls-2  {
-  stroke: $whiteColor;
-  stroke-linejoin: round;
-  stroke-width: 2px;
-  fill-opacity: 0.1;
-}
-.cls-1:hover,
-.cls-2:hover {
-  stroke: $purpleColor;
-  stroke-linejoin: round;
-  stroke-width: 2px;
-  fill-opacity: 1;
-  fill: $purpleColor;
-}
+.about {
 
+  .cls-1, .cls-2 {
+    stroke: $whiteColor;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-opacity: 0.1;
+    fill-rule: evenodd;
 
-.cls-1, .cls-2, .diamond {
-  fill-rule: evenodd;
-}
-.cls-3, .cls-4, .diamond {
-  font-size: 18px;
-}
-.cls-4 {
-  text-anchor: middle;
-  font-family: latoregular, sans-serif;
+  }
+  .cls-1:hover,
+  .cls-2:hover {
+    stroke: $purpleColor;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-opacity: 0.1;
+    fill: $purpleColor;
+
+  }
+  .cls-1, .cls-2 {
+    fill: $whiteColor;
+  }
+
 }
 
 .header {
@@ -164,6 +188,14 @@ a {
 }
 
 .about {
+  .flexbox-about {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content: center;
+  }
   background: gray;
   a {
     color: #707070;
