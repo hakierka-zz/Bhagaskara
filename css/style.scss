@@ -269,11 +269,11 @@ header {
   width: 100%;
   background-size: 100% auto;
   padding-bottom: 30%;
+  .statistic {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }
-.statistic {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row;
-  justify-content: space-around;
-  display: inline;
-}
+

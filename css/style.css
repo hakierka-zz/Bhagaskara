@@ -282,13 +282,11 @@ header .cls-4 {
   background-size: 100% auto;
   padding-bottom: 30%;
 }
-
-.statistic {
+#services .statistic {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-around;
-  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */
