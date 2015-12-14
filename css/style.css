@@ -101,22 +101,24 @@ header .cls-4 {
   font-family: latoregular, sans-serif;
 }
 
-.about .cls-1, .about .cls-2 {
+.cls-1, .cls-2 {
   stroke: #fff;
   stroke-linejoin: round;
   stroke-width: 2px;
   fill-opacity: 0.1;
   fill-rule: evenodd;
 }
-.about .cls-1:hover,
-.about .cls-2:hover {
+
+.cls-1:hover,
+.cls-2:hover {
   stroke: #9f449b;
   stroke-linejoin: round;
   stroke-width: 2px;
   fill-opacity: 0.1;
   fill: #9f449b;
 }
-.about .cls-1, .about .cls-2 {
+
+.cls-1, .cls-2 {
   fill: #fff;
 }
 
@@ -220,9 +222,10 @@ header .cls-4 {
   background-color: #fff;
 }
 
-.aboutWhole {
+#about {
   background: #ccd0d2;
   background-size: 100% auto;
+  width: 100%;
 }
 
 .about .flexbox-about {
@@ -233,45 +236,31 @@ header .cls-4 {
 }
 .about .flexbox-about .flex-about-item {
   text-align: center;
+  border: 1px solid red;
+  padding-top: 70px;
 }
-.about .flexbox-about a {
+.about .flexbox-about .flex-about-item a {
   color: #707070;
 }
-.about .aboutMore {
+.about .flexbox-about .flex-about-item svg {
+  width: 70%;
+}
+
+.about-container {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: space-between;
 }
-.about .aboutMore img {
-  width: 40%;
-}
-.about .aboutMore-item:last-child {
-  align-self: flex-start;
-}
-
-.centerElementAbout {
-  max-width: 1170px;
-  margin: 0 auto;
-  width: 85%;
-  border: 1px solid red;
-  background-color: #ccd0d2;
-}
-
-.centerElementMenu {
-  max-width: 1170px;
-  margin: 0 auto;
+.about-container img {
   width: 100%;
-  border: 1px solid red;
 }
 
-.team {
+#services {
   background-image: url("../images/quoteBackground.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 40%;
   height: 0;
   width: 100%;
   border: 1px solid blue;
@@ -279,27 +268,30 @@ header .cls-4 {
 
 .quote {
   text-align: center;
-  width: 100%;
   padding-top: 10%;
+  background-position: center;
 }
 .quote h1 {
   padding-top: 5%;
   color: white;
 }
 
-.team1 {
+.service1 {
+  height: 0;
+  width: 100%;
+  border: 1px solid blue;
   text-align: center;
 }
-.team1 img {
+.service1 img {
   width: 20%;
   margin: 0 auto;
   padding: 5% 0;
 }
-.team1 svg {
+.service1 svg {
   width: 6%;
 }
 
-.portfolio {
+#services {
   background-color: #ccd0d2;
   width: 100%;
   background-size: 100% auto;
@@ -311,6 +303,7 @@ header .cls-4 {
   flex-wrap: nowrap;
   flex-flow: row;
   justify-content: space-around;
+  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */
