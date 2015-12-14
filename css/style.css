@@ -256,11 +256,12 @@ header .cls-4 {
   width: 100%;
 }
 
-#services {
+#team {
   background-image: url("../images/quoteBackground.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 40%;
   height: 0;
   width: 100%;
   border: 1px solid blue;
@@ -268,27 +269,11 @@ header .cls-4 {
 
 .quote {
   text-align: center;
-  padding-top: 10%;
-  background-position: center;
+  padding-top: 4rem;
 }
 .quote h1 {
-  padding-top: 5%;
   color: white;
-}
-
-.service1 {
-  height: 0;
-  width: 100%;
-  border: 1px solid blue;
-  text-align: center;
-}
-.service1 img {
-  width: 20%;
-  margin: 0 auto;
-  padding: 5% 0;
-}
-.service1 svg {
-  width: 6%;
+  padding-top: 2rem;
 }
 
 #services {

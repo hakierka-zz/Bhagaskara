@@ -191,9 +191,7 @@ header {
   }
 
 }
-//.content {
-//  height: 1500px;
-//}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -243,43 +241,27 @@ header {
 }
 
 
-#services {
+#team {
   background-image: url("../images/quoteBackground.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 40%;
   height: 0;
   width: 100%;
   border: 1px solid blue;
 }
+
 .quote {
   text-align: center;
-  padding-top: 10%;
-  background-position: center;
+  padding-top: 4rem;
+
   h1 {
-    padding-top: 5%;
     color: white;
+    padding-top: 2rem;
   }
 }
 
-
-
-
-.service1 {
-
-  height: 0;
-  width:100% ;
-  border: 1px solid blue;
-  text-align: center;
-  img {
-    width: 20%;
-    margin: 0 auto;
-    padding: 5% 0;
-  }
-  svg {
-    width: 6%;
-  }
-}
 
 
 #services {
