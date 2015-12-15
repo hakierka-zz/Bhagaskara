@@ -263,6 +263,24 @@ header {
 }
 
 
+.team-header {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.team-slider {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  text-align: center;
+  img {
+    border-radius: 100%;
+  }
+  h1 {
+    padding-top: 2rem;
+  }
+}
 
 #services {
   background-color: $grayColor;

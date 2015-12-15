@@ -276,6 +276,25 @@ header .cls-4 {
   padding-top: 2rem;
 }
 
+.team-header {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.team-slider {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.team-slider img {
+  border-radius: 100%;
+}
+.team-slider h1 {
+  padding-top: 2rem;
+}
+
 #services {
   background-color: #ccd0d2;
   width: 100%;
