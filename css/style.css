@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:100);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,8 +57,17 @@ body {
   font-family: lato, sans-serif;
 }
 
+.list {
+  list-style-type: none;
+}
+
 h1 {
   font-size: xx-large;
+  font-family: url(https://fonts.googleapis.com/css?family=Lato:100);
+}
+
+p {
+  font-family: url(https://fonts.googleapis.com/css?family=Lato:100);
 }
 
 a {
@@ -81,6 +89,7 @@ header .cls-1, header .cls-2 {
   stroke-linejoin: round;
   stroke-width: 2px;
   fill-opacity: 0.1;
+  transition: 1s;
 }
 header .cls-1:hover,
 header .cls-2:hover {
@@ -131,6 +140,32 @@ header .cls-4 {
   width: 100%;
   border: 1px solid blue;
 }
+.header .icon-container-two {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.header .icon-container-two .flex-item {
+  width: 16.6%;
+  border: 2px dashed white;
+}
+.header .icon-container-four {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.header .icon-container-four .icon-side {
+  width: 33.33333%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header .icon-container-four .icon-side .flex-item {
+  width: 50%;
+  border: 2px dashed white;
+}
 
 .centerElement {
   max-width: 1170px;
@@ -159,10 +194,6 @@ header .cls-4 {
 .jumbotronMenu {
   border: 3px solid pink;
   width: 100%;
-}
-
-.list {
-  list-style-type: none;
 }
 
 .flexbox-container {

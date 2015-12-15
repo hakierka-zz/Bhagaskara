@@ -3,7 +3,7 @@
 
 @import "reset";
 @import "variables";
-@import url(https://fonts.googleapis.com/css?family=Lato:100);
+
 
 * {
   box-sizing: border-box;
@@ -11,9 +11,17 @@
 body {
   font-family: lato, sans-serif;
 }
+.list {
+
+  list-style-type: none;
+}
 
 h1 {
   font-size: xx-large;
+  font-family: $Lato;
+}
+p {
+  font-family: $Lato;
 }
 
 a {
@@ -37,6 +45,7 @@ header {
     stroke-linejoin: round;
     stroke-width: 2px;
     fill-opacity: 0.1;
+    transition:1s;
   }
   .cls-1:hover,
   .cls-2:hover {
@@ -92,6 +101,32 @@ header {
   height: 0;
   width:100%;
   border: 1px solid blue;
+  .icon-container-two {
+    margin:0;
+    padding:0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .flex-item {
+      width:16.6%;
+      border:2px dashed white;
+    }
+  }
+  .icon-container-four {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .icon-side {
+      width:$iconWidth * 2;
+      margin:0;
+      padding:0;
+      display:flex;
+      .flex-item{
+        width: 50%;
+        border:2px dashed white;
+      }
+    }
+  }
 
 
 }
@@ -127,10 +162,7 @@ header {
   width: 100% ;
 
 }
-.list {
 
-  list-style-type: none;
-}
 
 
 
