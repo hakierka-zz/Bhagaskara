@@ -466,6 +466,61 @@ header {
 
 
 
+.form-flexbox {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.form-flexbox {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100%;
+  .form-list {
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    margin-top: 2rem;
+    .form-list-item {
+      width: 100%;
+      border: 1px dashed pink;
+      margin-bottom: 1rem;
+    }
+    //h2 {
+    //  padding-bottom: 1rem;
+    //}
+    //img {
+    //  padding: 1rem;
+    //}
+
+    input {
+      width: 100%;
+      height: 2rem;
+    }
+    textarea {
+      width: 100%;
+      height: 15rem;
+
+    }
+    li {
+      #send {
+        width: auto;
+        background-color: $purpleColor;
+        color: #ffffff;
+        border-radius: 10%;
+
+      }
+      img {
+        padding-right: 1rem;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
 
 //End Gallery
 
