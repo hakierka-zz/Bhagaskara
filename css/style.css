@@ -360,9 +360,12 @@ header .cls-4 {
   flex-flow: row;
   justify-content: center;
 }
-
 .skill-section div:first-child {
   margin-right: 2rem;
+}
+
+.skill-section-right {
+  margin-bottom: 4rem;
 }
 
 .skill-header span {
@@ -392,10 +395,8 @@ header .cls-4 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10%;
-  font-weight: bold;
-  font-size: 13px;
-  color: #000;
+  font-size: 0.9rem;
+  color: #ccd0d2;
   background: #6adcfa;
 }
 
@@ -407,7 +408,8 @@ header .cls-4 {
 
 .skillbar-bar {
   height: 15px;
-  background: f0f0f0;
+  width: 0;
+  background: #f0f0f0;
 }
 
 .skill-bar-percent {
