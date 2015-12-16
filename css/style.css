@@ -493,4 +493,13 @@ header .cls-4 {
   padding-right: 0;
 }
 
+.warning {
+  display: none;
+}
+
+.warning_show {
+  font-size: 0.8rem;
+  color: #ccd0d2;
+}
+
 /*# sourceMappingURL=style.css.map */

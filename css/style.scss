@@ -463,9 +463,9 @@ header {
   }
 
 }
+//End Gallery
 
-
-
+//Contact
 .form-flexbox {
   display: flex;
   flex-flow: row;
@@ -496,6 +496,7 @@ header {
     input {
       width: 100%;
       height: 2rem;
+
     }
     textarea {
       width: 100%;
@@ -520,9 +521,17 @@ header {
   }
 }
 
+.warning{
+  display: none;
+}
+
+.warning_show {
+  font-size: 0.8rem;
+  color: $grayColor;
+}
 
 
-//End Gallery
+//End Contact
 
 
 
