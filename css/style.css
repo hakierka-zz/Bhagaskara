@@ -307,6 +307,9 @@ header .cls-4 {
   justify-content: center;
   padding: 5rem 0;
 }
+.team-header span {
+  color: #9f449b;
+}
 
 .flexbox-row {
   display: flex;
@@ -348,10 +351,6 @@ header .cls-4 {
 
 .skill-section-right {
   margin-bottom: 4rem;
-}
-
-.skill-header span {
-  color: #9f449b;
 }
 
 .skillbar {
@@ -432,6 +431,22 @@ header .cls-4 {
 }
 .quotes-slider h2 {
   padding-bottom: 2rem;
+}
+
+.gallery-tags a {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 0.4rem 0.7rem;
+}
+.gallery-tags a:hover {
+  background: #9f449b;
+  color: #ffffff;
+}
+.gallery-tags li {
+  padding: 0.4rem;
+}
+.gallery-tags li:last-child {
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

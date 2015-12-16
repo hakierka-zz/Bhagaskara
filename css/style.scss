@@ -185,38 +185,6 @@ header {
 
 
 
-//.flexbox-container {
-//  padding-top: 20px;
-//  //height: 400px;
-//  width: 100% ;
-//  border: 2px solid yellow;
-//  display: flex;
-//  flex-wrap: nowrap;
-//  flex-flow: row;
-//  //justify-content: center;
-//  align-content: flex-end;
-//  align-items: flex-end;
-//  .flex-item {
-//    //padding-bottom: 18%;
-//    flex: 1 1 auto;
-//    order: 0;
-//    width: 50%;
-//    background-repeat: no-repeat;
-//    background-size: contain;
-//    border:1px solid yellow;
-//
-//  }
-//
-//  .flex-item:nth-child(3),
-//  .flex-item:nth-child(4) {
-//    align-self: flex-start;
-//  }
-//  .flex-item:nth-child(4) {
-//    align-self: flex-start;
-//  }
-//
-//}
-
 .arrow {
   text-align: center;
   svg {
@@ -328,6 +296,9 @@ header {
   display: flex;
   justify-content: center;
   padding: 5rem 0;
+  span {
+    color: $purpleColor;
+  }
 }
 .flexbox-row {
   display: flex;
@@ -378,11 +349,6 @@ header {
   margin-bottom: 4rem;
 }
 
-.skill-header {
-  span {
-    color: $purpleColor;
-  }
-}
 
 .skillbar {
   position:relative;
@@ -475,3 +441,46 @@ header {
 
 
 //End quotes Slider
+
+
+//Gallery
+
+.gallery-tags {
+  a {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding:0.4rem 0.7rem;
+  }
+  a:hover {
+    background: $purpleColor;
+    color: #ffffff;
+  }
+  li {
+    padding: 0.4rem;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+}
+
+
+
+
+//End Gallery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
