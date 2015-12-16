@@ -433,6 +433,9 @@ header .cls-4 {
   padding-bottom: 2rem;
 }
 
+.gallery-tags {
+  padding-bottom: 3rem;
+}
 .gallery-tags a {
   border: 1px solid black;
   border-radius: 10%;
@@ -449,10 +452,21 @@ header .cls-4 {
   padding-right: 0;
 }
 
+.gallery {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100% auto;
+}
+.gallery img {
+  padding: 0.5rem;
+}
+
 .form-flexbox {
   display: flex;
   flex-flow: row;
   justify-content: center;
+  text-align: center;
 }
 
 .form-flexbox {
@@ -500,6 +514,14 @@ header .cls-4 {
 .warning_show {
   font-size: 0.8rem;
   color: #ccd0d2;
+}
+
+.contact-logo {
+  display: flex;
+  justify-content: center;
+}
+.contact-logo img {
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -401,6 +401,7 @@ header {
   color:#ffffff;
   color:rgba(0, 0, 0, 0.5);
 }
+
 //end skill section
 
 //Services statistics
@@ -446,6 +447,7 @@ header {
 //Gallery
 
 .gallery-tags {
+  padding-bottom: 3rem;
   a {
     border: 1px solid black;
     border-radius: 10%;
@@ -463,14 +465,29 @@ header {
   }
 
 }
-//End Gallery
 
-//Contact
+.gallery {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100% auto;
+  img {
+    padding: 0.5rem;
+  }
+}
+
 .form-flexbox {
   display: flex;
   flex-flow: row;
   justify-content: center;
+  text-align: center;
+
 }
+
+//End Gallery
+
+//Contact
+
 .form-flexbox {
   display: flex;
   flex-flow: row;
@@ -530,6 +547,13 @@ header {
   color: $grayColor;
 }
 
+.contact-logo {
+  display: flex;
+  justify-content: center;
+  img {
+    padding: 4rem;
+  }
+}
 
 //End Contact
 
