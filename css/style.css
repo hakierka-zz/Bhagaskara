@@ -180,7 +180,7 @@ header .cls-4 {
   background-position: center;
 }
 .jumbotron h1 {
-  padding-bottom: 2%;
+  padding-bottom: 0.2rem;
   color: white;
 }
 .jumbotron p {
@@ -223,7 +223,6 @@ header .cls-4 {
 
 .arrow {
   text-align: center;
-  height: 100px;
 }
 .arrow svg {
   width: 6%;
@@ -345,19 +344,6 @@ header .cls-4 {
   padding-right: 1rem;
 }
 
-#services {
-  background-color: #ccd0d2;
-  width: 100%;
-  background-size: 100% auto;
-  padding-bottom: 30%;
-}
-#services .statistic {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row;
-  justify-content: space-around;
-}
-
 .skill-section {
   font-family: 'Lato', sans-serif;
   display: flex;
@@ -423,6 +409,37 @@ header .cls-4 {
   font-size: 1rem;
   color: #ffffff;
   color: rgba(0, 0, 0, 0.5);
+}
+
+#services {
+  background-color: #ccd0d2;
+  width: 100%;
+  background-size: 100% auto;
+}
+#services .statistic {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.quotes-slider {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quotes-slider img {
+  border-radius: 100%;
+}
+.quotes-slider p {
+  padding: 0.7rem 0;
+}
+.quotes-slider h2 {
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

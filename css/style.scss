@@ -146,7 +146,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   h1 {
-    padding-bottom: 2%;
+    padding-bottom: 0.2rem;
 
     color: white;
 
@@ -203,7 +203,6 @@ header {
 
 .arrow {
   text-align: center;
-  height: 100px;
   svg {
     width: 6%;
   }
@@ -337,18 +336,7 @@ header {
   }
 }
 
-#services {
-  background-color: $grayColor;
-  width: 100%;
-  background-size: 100% auto;
-  padding-bottom: 30%;
-  .statistic {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-flow: row;
-    justify-content: space-around;
-  }
-}
+
 
 //skill section
 .skill-section {
@@ -426,3 +414,42 @@ header {
   color:rgba(0, 0, 0, 0.5);
 }
 //end skill section
+
+//Services statistics
+
+#services {
+  background-color: $grayColor;
+  width: 100%;
+  background-size: 100% auto;
+  .statistic {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3rem 0;
+  }
+}
+
+//End service statistics
+
+//Quotes slider
+.quotes-slider {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    border-radius: 100%;
+  }
+  p {
+    padding: 0.7rem 0;
+  }
+  h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+
+//End quotes Slider
