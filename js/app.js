@@ -122,7 +122,6 @@ $(document).ready(function(){
 
 
 
-    // Click more or less - TO trzeba zautomatyzować!
 
     function showHide(){
         var showMore= $('.show-more');
@@ -140,24 +139,58 @@ $(document).ready(function(){
 
     }
 
-    var overImage = $('.over-image');
-    var insideImage = $('.inside-image');
+    function opacityOnThePictureInThePortfolio() {
 
-    overImage.hover(function(){
-        $(this).find(insideImage).show();
-        },
-        function() {
-            $(this).find(insideImage).hide();
+        /////////////////
+        /////Plus///////
+        //////on////////
+        /////the////////
+        ////picture////
+        ///////////////
 
-    });
+        var overImage = $('.over-image');
+        var insideImage = $('.inside-image');
 
-    //End Gallery
+        overImage.hover(function () {
+                $(this).find(insideImage).show();
+            },
+            function () {
+                $(this).find(insideImage).hide();
 
+            });
+    }
+
+
+
+    function moveSlides (){
+        var wrapperWidth = $(".wrapper").outerWidth();
+        var sliderParent = $(".slideshow");
+        var slideChildren = sliderParent.children();
+        //TODO: sprawdzic rozmiar okna window resize i w tym evencie ustawic resize
+        var countOfSlide = slideChildren.length;
+        var width1Slider = wrapperWidth;
+        slideChildren.css("width", wrapperWidth);
+        sliderParent.css("width", countOfSlide * wrapperWidth + 5);
+        var counter = 1;
+        setInterval(function(){
+            sliderParent.animate({
+                left: -width1Slider * counter
+            });
+            if(counter > countOfSlide-2){
+                counter=0;
+            }
+            else{
+                counter++;
+            }
+        },3000);
+    }
+    moveSlides();
     stickyMenu();
     skillBars();
     validateForm();
     searchingByTags();
     showHide();
+    opacityOnThePictureInThePortfolio();
 
 
 

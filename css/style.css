@@ -417,15 +417,29 @@ header .cls-4 {
   padding: 3rem 0;
 }
 
+.wrapper {
+  width: 100% auto;
+  overflow: hidden;
+}
+
+.slideshow {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  width: 100% auto;
+}
+
 .quotes-slider {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100% auto;
 }
 .quotes-slider img {
   border-radius: 100%;
+  width: 10%;
 }
 .quotes-slider p {
   padding: 0.7rem 0;

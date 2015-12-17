@@ -425,14 +425,29 @@ header {
 //End service statistics
 
 //Quotes slider
+.wrapper {
+  width: 100% auto;
+  overflow: hidden;
+}
+
+.slideshow {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  width: 100% auto;
+
+}
 .quotes-slider {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100% auto;
+  //position: absolute;
   img {
     border-radius: 100%;
+    width: 10%
   }
   p {
     padding: 0.7rem 0;
