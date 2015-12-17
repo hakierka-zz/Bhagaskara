@@ -241,6 +241,7 @@ header .cls-4 {
   left: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 10;
 }
 
 #about {
@@ -436,12 +437,13 @@ header .cls-4 {
 .gallery-tags {
   padding-bottom: 3rem;
 }
-.gallery-tags a {
-  border: 1px solid black;
-  border-radius: 10%;
+.gallery-tags button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
   padding: 0.4rem 0.7rem;
 }
-.gallery-tags a:hover {
+.gallery-tags button:hover {
   background: #9f449b;
   color: #ffffff;
 }
@@ -456,23 +458,51 @@ header .cls-4 {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  width: 100% auto;
+  width: auto;
+}
+.gallery li {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.gallery .over-image {
+  position: relative;
+}
+.gallery .inside-image {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .gallery img {
-  padding: 0.5rem;
+  position: relative;
+  width: 33.3%;
 }
 
-.form-flexbox {
+.hide {
+  display: none;
+}
+
+.button-center {
   display: flex;
-  flex-flow: row;
   justify-content: center;
-  text-align: center;
+  padding: 2rem 0;
+}
+.button-center button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0.4rem 0.7rem;
+}
+.button-center button:hover {
+  background: #9f449b;
+  color: #ffffff;
 }
 
 .form-flexbox {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 .form-flexbox .form-list {
@@ -505,6 +535,15 @@ header .cls-4 {
 }
 .form-flexbox .form-list li img:last-child {
   padding-right: 0;
+}
+
+.signature {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.signature a {
+  padding-right: 1rem;
 }
 
 .warning {

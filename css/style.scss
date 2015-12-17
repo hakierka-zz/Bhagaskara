@@ -222,6 +222,7 @@ header {
   left: 0;
   width: 100% ;
   background-color: $whiteColor;
+  z-index: 10;
 }
 #about {
   background: #ccd0d2;
@@ -304,6 +305,7 @@ header {
   display: flex;
   flex-flow: row;
   justify-content: center;
+
 }
 
 .team-slider {
@@ -448,12 +450,13 @@ header {
 
 .gallery-tags {
   padding-bottom: 3rem;
-  a {
-    border: 1px solid black;
-    border-radius: 10%;
+  button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
     padding:0.4rem 0.7rem;
   }
-  a:hover {
+  button:hover {
     background: $purpleColor;
     color: #ffffff;
   }
@@ -470,18 +473,57 @@ header {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  width: 100% auto;
+  width:  auto;
+
+  li {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+
+
+  }
+  .over-image {
+    position: relative;
+
+
+  }
+  .inside-image {
+    display: none;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+  }
   img {
-    padding: 0.5rem;
+    position: relative;
+    width: 33.3%;
+
+
+  }
+  img:hover {
+
   }
 }
 
-.form-flexbox {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  text-align: center;
+.hide {
+  display: none;
+}
 
+.button-center {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 ;
+  button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding:0.4rem 0.7rem;
+  }
+  button:hover {
+    background: $purpleColor;
+    color: #ffffff;
+  }
 }
 
 //End Gallery
@@ -491,7 +533,8 @@ header {
 .form-flexbox {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  //justify-content: space-around;
   width: 100%;
   .form-list {
     display: flex;
@@ -533,10 +576,21 @@ header {
         &:last-child {
           padding-right: 0;
         }
+
       }
     }
   }
 }
+//Tags are in the center of img in the gallery
+.signature {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  a {
+    padding-right: 1rem;
+  }
+}
+
 
 .warning{
   display: none;
