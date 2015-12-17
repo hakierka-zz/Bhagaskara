@@ -476,7 +476,7 @@ header .cls-4 {
 }
 .gallery img {
   position: relative;
-  width: 33.3%;
+  width: 100%;
 }
 
 .hide {
