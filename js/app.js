@@ -187,6 +187,50 @@ $(document).ready(function(){
             }
         },3000);
     }
+
+
+        function moveSliderSkill() {
+            var buttonLeft = $('.left-button');
+            var buttonRight = $('.right-button');
+            var teamMembers = $('.team-member');
+            var allChildren = teamMembers.length;
+
+            buttonLeft.on("click",function(){
+
+                var active = $('.active-member');
+                active.removeClass('active-member');
+                active.prev().addClass('active-member');
+                var actualElement = active.index();
+
+
+
+
+                if (actualElement<=0) {
+                    active.removeClass('active-member');
+                    teamMembers.eq(allChildren-1).addClass('active-member');
+                }
+
+
+            });
+            buttonRight.on("click", function() {
+
+                var active = $('.active-member');
+                active.removeClass('active-member');
+                active.next().addClass('active-member');
+                var actualElement = active.index();
+
+
+                if (actualElement>=allChildren-1) {
+                    active.removeClass('active-member');
+                    teamMembers.eq(0).addClass('active-member');
+                }
+            });
+
+        }
+
+
+
+
     moveSlides();
     stickyMenu();
     skillBars();
@@ -194,6 +238,7 @@ $(document).ready(function(){
     searchingByTags();
     showHide();
     opacityOnThePictureInThePortfolio();
+    moveSliderSkill();
 
 
 

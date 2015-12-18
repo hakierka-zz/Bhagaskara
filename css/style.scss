@@ -94,13 +94,13 @@ header {
 
 
 .header {
+  background-attachment: fixed;
+  background-size: cover;
   background-image: url("../images/Layer2.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   padding-bottom: 56%;
   height: 0;
   width:100%;
-  border: 1px solid blue;
   .icon-container-two {
     margin:0;
     padding:0;
@@ -108,11 +108,11 @@ header {
     width: 100%;
     justify-content: center;
     .flex-item {
-      width: 11.9% ;
-      border:2px dashed white;
+      width: 14% ;
+
     }
     li:first-child {
-      margin-right: 1.5%;
+      margin-right: 4%;
     }
 
 
@@ -122,17 +122,16 @@ header {
     width: 100%;
     justify-content: space-between;
     .icon-side {
-      width:$iconWidth * 1.5;
+      width:$iconWidth * 1.8;
       margin:0;
       padding:0;
       display:flex;
       justify-content: space-between;
       .flex-item{
         width: 50%;
-        border:2px dashed white;
       }
       li:first-child {
-        margin-right: 5%;
+        margin-right: 4%;
       }
 
     }
@@ -170,13 +169,11 @@ header {
   img {
     padding: 1rem 0;
     width: 50%;
-    border:2px dashed white;
 
   }
 }
 .jumbotronMenu {
 
-  border: 3px solid pink;
   width: 100% ;
   height: 20%;
 
@@ -204,6 +201,14 @@ header {
   background: $whiteColor;
   li {
     display: inline-block;
+    line-height: 100%;
+    font-size: 1.3rem;
+    a{
+      color: black;
+      &:hover {
+        color: $purpleColor;
+      }
+    }
     &:first-child {
       padding-left: 10px;
     }
@@ -211,7 +216,6 @@ header {
   img {
     width: 15%;
     height: 10%;
-    border:2px dashed white;
   }
 
 }
@@ -240,14 +244,12 @@ header {
 
     .flex-about-item {
       text-align: center;
-      border: 1px solid red;
       padding-top: 70px;
       a {
         color: #707070;
       }
       svg {
         width: 50%;
-        border:2px dashed white;
       }
     }
 
@@ -268,14 +270,14 @@ header {
 
 
 #team {
+  background-attachment: fixed;
+  background-size: cover;
   background-image: url("../images/quoteBackground.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 40%;
   height: 0;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .quote {
@@ -313,6 +315,12 @@ header {
   flex-flow: row;
   justify-content: space-around;
   text-align: center;
+  .team-member {
+    opacity: 0.3;
+  }
+  .active-member {
+    opacity: 1;
+  }
   img {
     border-radius: 100%;
   }
@@ -325,9 +333,6 @@ header {
   }
   li {
     padding-bottom: 2rem;
-    &:first-child {
-      padding-right: 1rem;
-    }
   }
 }
 
@@ -431,6 +436,7 @@ header {
 }
 
 .slideshow {
+  position: relative;
   display: flex;
   flex-flow: row;
   position: relative;
@@ -554,7 +560,6 @@ header {
     margin-top: 2rem;
     .form-list-item {
       width: 100%;
-      border: 1px dashed pink;
       margin-bottom: 1rem;
     }
     //h2 {

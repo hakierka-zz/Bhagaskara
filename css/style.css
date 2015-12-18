@@ -132,13 +132,13 @@ header .cls-4 {
 }
 
 .header {
+  background-attachment: fixed;
+  background-size: cover;
   background-image: url("../images/Layer2.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   padding-bottom: 56%;
   height: 0;
   width: 100%;
-  border: 1px solid blue;
 }
 .header .icon-container-two {
   margin: 0;
@@ -148,11 +148,10 @@ header .cls-4 {
   justify-content: center;
 }
 .header .icon-container-two .flex-item {
-  width: 11.9%;
-  border: 2px dashed white;
+  width: 14%;
 }
 .header .icon-container-two li:first-child {
-  margin-right: 1.5%;
+  margin-right: 4%;
 }
 .header .icon-container-four {
   display: flex;
@@ -160,7 +159,7 @@ header .cls-4 {
   justify-content: space-between;
 }
 .header .icon-container-four .icon-side {
-  width: 25%;
+  width: 30%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -168,10 +167,9 @@ header .cls-4 {
 }
 .header .icon-container-four .icon-side .flex-item {
   width: 50%;
-  border: 2px dashed white;
 }
 .header .icon-container-four .icon-side li:first-child {
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 .centerElement {
@@ -198,11 +196,9 @@ header .cls-4 {
 .jumbotron img {
   padding: 1rem 0;
   width: 50%;
-  border: 2px dashed white;
 }
 
 .jumbotronMenu {
-  border: 3px solid pink;
   width: 100%;
   height: 20%;
 }
@@ -225,6 +221,14 @@ header .cls-4 {
 }
 .menu li {
   display: inline-block;
+  line-height: 100%;
+  font-size: 1.3rem;
+}
+.menu li a {
+  color: black;
+}
+.menu li a:hover {
+  color: #9f449b;
 }
 .menu li:first-child {
   padding-left: 10px;
@@ -232,7 +236,6 @@ header .cls-4 {
 .menu img {
   width: 15%;
   height: 10%;
-  border: 2px dashed white;
 }
 
 .sticky {
@@ -258,7 +261,6 @@ header .cls-4 {
 }
 .about .flexbox-about .flex-about-item {
   text-align: center;
-  border: 1px solid red;
   padding-top: 70px;
 }
 .about .flexbox-about .flex-about-item a {
@@ -266,7 +268,6 @@ header .cls-4 {
 }
 .about .flexbox-about .flex-about-item svg {
   width: 50%;
-  border: 2px dashed white;
 }
 
 .about-container {
@@ -280,14 +281,14 @@ header .cls-4 {
 }
 
 #team {
+  background-attachment: fixed;
+  background-size: cover;
   background-image: url("../images/quoteBackground.png");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 40%;
   height: 0;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .quote {
@@ -324,6 +325,12 @@ header .cls-4 {
   justify-content: space-around;
   text-align: center;
 }
+.team-slider .team-member {
+  opacity: 0.3;
+}
+.team-slider .active-member {
+  opacity: 1;
+}
 .team-slider img {
   border-radius: 100%;
 }
@@ -335,9 +342,6 @@ header .cls-4 {
 }
 .team-slider li {
   padding-bottom: 2rem;
-}
-.team-slider li:first-child {
-  padding-right: 1rem;
 }
 
 .skill-section {
@@ -423,6 +427,7 @@ header .cls-4 {
 }
 
 .slideshow {
+  position: relative;
   display: flex;
   flex-flow: row;
   position: relative;
@@ -527,7 +532,6 @@ header .cls-4 {
 }
 .form-flexbox .form-list .form-list-item {
   width: 100%;
-  border: 1px dashed pink;
   margin-bottom: 1rem;
 }
 .form-flexbox .form-list input {
