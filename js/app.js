@@ -22,6 +22,9 @@ $(document).ready(function(){
 
 
 
+
+
+
     function skillBars() {
         //Skill bars
         $('.skillbar').each(function(){
