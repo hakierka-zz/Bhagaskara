@@ -20,7 +20,22 @@ $(document).ready(function(){
         });
     }
 
-
+    function smoothScroll() {
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    }
 
 
 
@@ -189,7 +204,7 @@ $(document).ready(function(){
     }
 
 
-        function moveSliderSkill() {
+    function moveSliderSkill() {
             var buttonLeft = $('.left-button');
             var buttonRight = $('.right-button');
             var teamMembers = $('.team-member');
@@ -233,6 +248,7 @@ $(document).ready(function(){
 
     moveSlides();
     stickyMenu();
+    smoothScroll();
     skillBars();
     validateForm();
     searchingByTags();

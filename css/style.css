@@ -176,7 +176,6 @@ header .cls-4 {
   max-width: 1170px;
   margin: 0 auto;
   width: 85%;
-  border: 1px solid red;
 }
 
 .jumbotron {
@@ -211,7 +210,6 @@ header .cls-4 {
 }
 
 .menu {
-  border: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
@@ -261,23 +259,41 @@ header .cls-4 {
 }
 .about .flexbox-about .flex-about-item {
   text-align: center;
-  padding-top: 70px;
-}
-.about .flexbox-about .flex-about-item a {
-  color: #707070;
+  padding: 6rem 0;
 }
 .about .flexbox-about .flex-about-item svg {
   width: 50%;
 }
+.about .flexbox-about .flex-about-item h1 {
+  padding: 1rem 0;
+}
+.about .flexbox-about .flex-about-item p {
+  padding: 0 0.5rem;
+}
 
 .about-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-flow: row;
   justify-content: space-between;
-}
-.about-container img {
   width: 100%;
+}
+.about-container li {
+  width: 50%;
+}
+.about-container li img {
+  width: 100%;
+}
+.about-container li:last-child {
+  align-self: flex-end;
+}
+.about-container li:last-child button {
+  background-color: #9f449b;
+  color: #ffffff;
+}
+.about-container li:last-child button:hover {
+  background-color: #ffffff;
+  color: #9f449b;
 }
 
 #team {
