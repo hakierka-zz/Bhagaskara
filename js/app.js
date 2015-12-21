@@ -3,6 +3,10 @@
  */
 $(document).ready(function(){
 
+    /**
+     * Thanks to stickyMenu function, when you're scrroling
+     * the navigation bar is always up, fixed on the top of the site
+     * **/
 
     function stickyMenu(){
         //Sticky menu
@@ -20,6 +24,10 @@ $(document).ready(function(){
         });
     }
 
+    /**
+     * move to the differents section from the navigation
+     * is slow and smooth
+     * **/
     function smoothScroll() {
         $(function () {
             $('a[href*=#]:not([href=#])').click(function () {
@@ -38,7 +46,9 @@ $(document).ready(function(){
     }
 
 
-
+     /**
+      * Animation in the loading skill bars of the member of the team.
+      * **/
 
     function skillBars() {
         //Skill bars
@@ -48,6 +58,13 @@ $(document).ready(function(){
             },6000);
         });
     }
+
+    /**
+     * Thank's to that function
+     * we can check is data are correct.
+     * It's check email is correctly written, name is not numeric
+     * and has more than 3 letters
+     * **/
 
     function validateForm() {
         //Form Validate
@@ -96,6 +113,10 @@ $(document).ready(function(){
     }
 
 
+    /**
+     * We can segregate pictures in the gallery by tags
+     * **/
+
     function searchingByTags() {
 
         //Start Gallery
@@ -139,7 +160,9 @@ $(document).ready(function(){
     }
 
 
-
+    /**
+     * Showing or hiding picture when you're click the button
+     * **/
 
     function showHide(){
         var showMore= $('.show-more');
@@ -157,14 +180,11 @@ $(document).ready(function(){
 
     }
 
-    function opacityOnThePictureInThePortfolio() {
+    /**
+     * It's a hover effect with opacity mask when mouse is over the picture
+     * **/
 
-        /////////////////
-        /////Plus///////
-        //////on////////
-        /////the////////
-        ////picture////
-        ///////////////
+    function opacityOnThePictureInThePortfolio() {
 
         var overImage = $('.over-image');
         var insideImage = $('.inside-image');
@@ -178,13 +198,14 @@ $(document).ready(function(){
             });
     }
 
-
+    /**
+     * It's automatic slider with quotes partners of the company
+     * **/
 
     function moveSlides (){
         var wrapperWidth = $(".wrapper").outerWidth();
         var sliderParent = $(".slideshow");
         var slideChildren = sliderParent.children();
-        //TODO: sprawdzic rozmiar okna window resize i w tym evencie ustawic resize
         var countOfSlide = slideChildren.length;
         var width1Slider = wrapperWidth;
         slideChildren.css("width", wrapperWidth);
@@ -203,6 +224,10 @@ $(document).ready(function(){
         },3000);
     }
 
+    /**
+     * It's a slider of the team members.
+     * Every member has different skills.
+     * **/
 
     function moveSliderSkill() {
             var buttonLeft = $('.left-button');
@@ -244,6 +269,11 @@ $(document).ready(function(){
 
 
         }
+
+    /**
+     * One click on the small picture - you can see the same, big picture.
+     * Second click - the big picture is gone
+     * **/
 
     function galleryBigImage() {
         var activeImage = $('.inside-image');

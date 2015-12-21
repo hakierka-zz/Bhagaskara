@@ -289,12 +289,16 @@ header .cls-4 {
   padding-left: 2rem;
   align-self: flex-end;
 }
+.about-container li:last-child p {
+  padding-bottom: 3rem;
+}
 .about-container li:last-child button {
   background-color: #9f449b;
   color: #ffffff;
   padding: 0.3rem 0.8rem;
   font-size: 1rem;
   border: 1px solid black;
+  border-radius: 5px;
 }
 .about-container li:last-child button:hover {
   background-color: #ffffff;
@@ -561,6 +565,7 @@ header .cls-4 {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
 .form-flexbox .form-list {
@@ -587,6 +592,7 @@ header .cls-4 {
   color: #ffffff;
   padding: 0.3rem 0.8rem;
   border: 1px solid black;
+  border-radius: 5px;
   font-size: 1rem;
 }
 .form-flexbox .form-list li img {
