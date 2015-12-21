@@ -597,7 +597,7 @@ header {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   .form-list {
     display: flex;
@@ -636,7 +636,7 @@ header {
         border-radius: 5px;
         font-size: 1rem;
       }
-      img {
+      a {
         padding-right: 1rem;
         &:last-child {
           padding-right: 0;

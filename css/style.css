@@ -569,7 +569,7 @@ header .cls-4 {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .form-flexbox .form-list {
@@ -599,10 +599,10 @@ header .cls-4 {
   border-radius: 5px;
   font-size: 1rem;
 }
-.form-flexbox .form-list li img {
+.form-flexbox .form-list li a {
   padding-right: 1rem;
 }
-.form-flexbox .form-list li img:last-child {
+.form-flexbox .form-list li a:last-child {
   padding-right: 0;
 }
 
