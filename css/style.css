@@ -277,6 +277,7 @@ header .cls-4 {
   flex-flow: row;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 4rem;
 }
 .about-container li {
   width: 50%;
@@ -285,15 +286,20 @@ header .cls-4 {
   width: 100%;
 }
 .about-container li:last-child {
+  padding-left: 2rem;
   align-self: flex-end;
 }
 .about-container li:last-child button {
   background-color: #9f449b;
   color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }
 .about-container li:last-child button:hover {
   background-color: #ffffff;
   color: #9f449b;
+  border: 1px solid black;
 }
 
 #team {
@@ -534,6 +540,23 @@ header .cls-4 {
   color: #ffffff;
 }
 
+.portfolioBigImg {
+  display: none;
+}
+
+.portfolioBigImgShow {
+  z-index: 1;
+  display: block;
+  width: 100%;
+  position: fixed;
+  padding: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: #ccd0d2;
+}
+
 .form-flexbox {
   display: flex;
   flex-flow: row;
@@ -562,7 +585,9 @@ header .cls-4 {
   width: auto;
   background-color: #9f449b;
   color: #ffffff;
-  border-radius: 10%;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid black;
+  font-size: 1rem;
 }
 .form-flexbox .form-list li img {
   padding-right: 1rem;

@@ -1,6 +1,3 @@
-
-
-
 @import "reset";
 @import "variables";
 
@@ -264,19 +261,27 @@ header {
   flex-flow:row;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 4rem;
   li {
     width: 50%;
+
     img {
       width: 100%;
     }
     &:last-child {
+      padding-left: 2rem;
       align-self: flex-end;
       button {
         background-color: $purpleColor;
         color: #ffffff;
+        padding: 0.3rem 0.8rem;
+        font-size: 1rem;
+        border: 1px solid black;
+
         &:hover {
           background-color: #ffffff;
           color: $purpleColor;
+          border: 1px solid black;
         }
       }
     }
@@ -559,6 +564,23 @@ header {
   }
 }
 
+.portfolioBigImg {
+  display: none;
+}
+
+.portfolioBigImgShow{
+  z-index: 1;
+  display: block;
+  width: 100%;
+  position: fixed;
+  padding: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: $grayColor;
+}
+
 //End Gallery
 
 //Contact
@@ -600,8 +622,9 @@ header {
         width: auto;
         background-color: $purpleColor;
         color: #ffffff;
-        border-radius: 10%;
-
+        padding: 0.3rem 0.8rem;
+        border: 1px solid black;
+        font-size: 1rem;
       }
       img {
         padding-right: 1rem;

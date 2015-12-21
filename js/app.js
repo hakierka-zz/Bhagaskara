@@ -239,10 +239,22 @@ $(document).ready(function(){
                     active.removeClass('active-member');
                     teamMembers.eq(0).addClass('active-member');
                 }
+
             });
+
 
         }
 
+    function galleryBigImage() {
+        var activeImage = $('.inside-image');
+        var bigImage = $('.portfolioBigImg');
+        activeImage.on('click',function(){
+            $(this).next().addClass('portfolioBigImgShow');
+        });
+        bigImage.on('click', function(){
+           $(this).removeClass('portfolioBigImgShow');
+        });
+    }
 
 
 
@@ -255,6 +267,8 @@ $(document).ready(function(){
     showHide();
     opacityOnThePictureInThePortfolio();
     moveSliderSkill();
+    galleryBigImage();
+
 
 
 
