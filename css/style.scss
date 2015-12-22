@@ -491,7 +491,16 @@ header {
     padding-bottom: 2rem;
   }
 }
+.navigatingDots {
 
+  li::after {
+    border-radius: 100%;
+    border: 1px solid #000000;
+    width: 1rem;
+
+  }
+
+}
 
 //End quotes Slider
 

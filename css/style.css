@@ -483,6 +483,12 @@ header .cls-4 {
   padding-bottom: 2rem;
 }
 
+.navigatingDots li::after {
+  border-radius: 100%;
+  border: 1px solid #000000;
+  width: 1rem;
+}
+
 .gallery-tags {
   padding-bottom: 3rem;
 }

@@ -209,7 +209,7 @@ $(document).ready(function(){
         var countOfSlide = slideChildren.length;
         var width1Slider = wrapperWidth;
         slideChildren.css("width", wrapperWidth);
-        sliderParent.css("width", countOfSlide * wrapperWidth + 5);
+        sliderParent.css("width", countOfSlide * wrapperWidth + 2);
         var counter = 1;
         setInterval(function(){
             sliderParent.animate({
@@ -235,15 +235,13 @@ $(document).ready(function(){
             var teamMembers = $('.team-member');
             var allChildren = teamMembers.length;
 
-            buttonLeft.on("click",function(){
+        buttonLeft.on("click",function(){
 
                 var active = $('.active-member');
                 active.removeClass('active-member');
                 active.prev().addClass('active-member');
                 var actualElement = active.index();
-
-
-
+                var percent = $('.clearfix');
 
                 if (actualElement<=0) {
                     active.removeClass('active-member');
@@ -275,6 +273,8 @@ $(document).ready(function(){
      * Second click - the big picture is gone
      * **/
 
+
+
     function galleryBigImage() {
         var activeImage = $('.inside-image');
         var bigImage = $('.portfolioBigImg');
@@ -285,6 +285,7 @@ $(document).ready(function(){
            $(this).removeClass('portfolioBigImgShow');
         });
     }
+
 
 
 
